@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -197,7 +198,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-5">
             <div class="card">
-              <img class="img-fluid" src="/images/img/img-3.jpg" alt="Sandwich">
+              <img class="img-fluid" src="/images/img/img-4.jpg" alt="Sandwich">
               <div class="card-content">
                 <p class="card-heading">Vegetarian Burger</p>
                 <p class="card-text">Time: 35 - 45 minutes | Serves: 1</p>
@@ -208,7 +209,7 @@
           </div>
           <div class="col-lg-4 col-md-6 col-12 mb-lg-0 mb-5">
             <div class="card">
-              <img class="img-fluid" src="/images/img/img-3.jpg" alt="Sandwich">
+              <img class="img-fluid" src="/images/img/img-5.jpg" alt="Sandwich">
               <div class="card-content">
                 <p class="card-heading">Raspberry Stuffed French Toast</p>
                 <p class="card-text">Time: 10 - 15 minutes | Serves: 1</p>
@@ -233,17 +234,39 @@
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
-                <div class="col-12 bg-white">
+                <div class="col-12 review-container">
                   <img class="review-img" src="/images/review/review-1.jpg" alt="">
-                  <blockquote class="review-text">"Far far away, behind the word mountains, far from the countries
+                  <blockquote class="review-text">"Far far away, behind the word mountains, far from the <br />
+                    countries
                     Vokalia and
                     Consonantia, there
                     live the blind texts."</blockquote>
                   <p class="name">Johnathan Doe - UX Designer</p>
                 </div>
               </div>
-              <div class="swiper-slide">Slide 2</div>
-              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">
+                <div class="col-12 review-container">
+                  <img class="review-img" src="/images/review/review-2.jpg" alt="">
+                  <blockquote class="review-text">"Far far away, behind the word mountains, far from the <br />
+                    countries
+                    Vokalia and
+                    Consonantia, there
+                    live the blind texts."</blockquote>
+                  <p class="name">Jane Doe - UI Designer</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="col-12 review-container">
+                  <img class="review-img" src="/images/review/review-3.jpg" alt="">
+                  <blockquote class="review-text">"Far far away, behind the word mountains, far from the <br />
+                    countries
+                    Vokalia and
+                    Consonantia, there
+                    live the blind texts."</blockquote>
+                  <p class="name">Steve Smith - Product Manager</p>
+                </div>
+              </div>
+
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
@@ -252,8 +275,122 @@
         </div>
       </div>
     </section>
+
+    <section class="faq-section">
+      <h2 class="heading-secondary text-center">Frequently Asked Qustions</h2>
+
+      <div class="container faq-top">
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    <p class="faq-heading">
+                      <span>~</span> Do You Bake Breads Containing Animal Fats Or Products?
+                    </p>
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <p class="faq-heading">
+                      <span>~</span> Can I Order Your Products Online?
+                    </p>
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p class="faq-heading">
+                      <span>~</span>When Are You Opening A Shop Near Me?
+                      Products?
+                    </p>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <p class="faq-heading">
+                      <span>~</span> Upcoming Events
+                    </p>
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live
+                    the blind texts.
+                    Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12"></div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="new-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12"></div>
+        </div>
+      </div>
+    </section>
   </main>
 
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12"></div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script src="/js/bootstrap.bundle.js"></script>
   <script src="app.js"></script>
 </body>
