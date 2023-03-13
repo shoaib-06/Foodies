@@ -124,6 +124,7 @@ html {
 .heading-secondary,
 .heading-tertiary {
   font-weight: 700;
+  font-family: $secondary-font;
   letter-spacing: -0.5px;
   color: $secondary-color;
 }
@@ -222,18 +223,18 @@ html {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  margin: 4.8rem 0;
 
   .list-item {
     display: flex;
     align-items: center;
     gap: 1.6rem;
     line-height: 1.2;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 
     .list-icon {
-      height: 3rem;
-      width: 3rem;
-      color: #e67e22;
+      font-size: 2rem;
+      color: $primary-color;
     }
   }
 }
@@ -246,48 +247,48 @@ strong {
 
 /* MOBILE NAVIGATION */
 
-.btn-mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
+// .btn-mobile-nav {
+//   border: none;
+//   background: none;
+//   cursor: pointer;
 
-  display: none;
+//   display: none;
 
-  .mobile-icon-nav {
-    height: 4.8rem;
-    width: 4.8rem;
-    color: #333;
-  }
+//   .mobile-icon-nav {
+//     height: 4.8rem;
+//     width: 4.8rem;
+//     color: #333;
+//   }
 
-  .mobile-icon-nav[name="close-outline"] {
-    display: none;
-  }
-}
+//   .mobile-icon-nav[name="close-outline"] {
+//     display: none;
+//   }
+// }
 
-.sticky .header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.98);
-  z-index: 999;
-  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-}
+// .sticky .header {
+//   position: fixed;
+//   top: 0;
+//   bottom: 0;
+//   width: 100%;
+//   height: 8rem;
+//   padding-top: 0;
+//   padding-bottom: 0;
+//   background-color: rgba(255, 255, 255, 0.98);
+//   z-index: 999;
+//   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+// }
 
-.sticky .hero-section {
-  margin-top: 8rem !important;
-}
+// .sticky .hero-section {
+//   margin-top: 8rem !important;
+// }
 
 /**************************/
 /* HEADER SECTION */
 /**************************/
 
 .header {
-  position: relative;
   height: 9.6rem;
+  position: fixed;
 
   .nav-wrap {
     position: fixed;
@@ -305,11 +306,12 @@ strong {
       font-size: 1.5rem;
       font-weight: 600;
       letter-spacing: 1px;
+      padding: 0.8rem;
       color: $primary-color;
 
       &:hover,
       &:active {
-        color: #333;
+        color: #89233a;
       }
     }
 
@@ -335,14 +337,19 @@ strong {
 /**************************/
 
 .hero-section {
+
   .hero-img {
     width: 100%;
     background: url(/images/bg/bg-1.jpg) no-repeat center;
     background-size: cover;
-    padding: 17rem 0 17rem;
+    padding: 27rem 0 17rem;
 
     .btn-container {
       margin-top: 2.4rem;
+
+      .hero-icon {
+        margin-left: 1.6rem;
+      }
     }
   }
 }
@@ -375,4 +382,155 @@ strong {
 
 .about-section {
   padding: 12.8rem 0;
+
+  .row {
+
+    img {
+      border-radius: 9px;
+    }
+
+    .text-sec {
+      padding-left: 3.6rem;
+    }
+
+    .heading-secondary {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .food-type {
+    margin-top: 6.4rem;
+
+    .txt {
+      padding-right: 4.8rem;
+    }
+  }
+}
+
+/**************************/
+/* STORY SECTION */
+/**************************/
+
+.story-section {
+  .story-img {
+    background: url(/images/bg/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    padding: 9rem 0;
+    text-align: center;
+
+
+
+    .story {
+      width: 65%;
+      margin: 0 auto;
+
+      .heading-secondary {
+        color: $primary-color;
+        margin-bottom: 2.4rem;
+      }
+
+      .my-btn {
+        margin-top: 2.4rem;
+      }
+    }
+  }
+
+}
+
+/**************************/
+/* FOODS SECTION */
+/**************************/
+
+.foods-section {
+  padding: 12.8rem 0;
+
+  .food-container {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+
+    .heading-secondary {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  .card {
+    border: none;
+    box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.075);
+    border-radius: 11px;
+    overflow: hidden;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: translateY(-1.2rem);
+    }
+
+    img {
+      border-radius: 11px;
+    }
+
+    .card-content {
+      margin-top: 4.8rem;
+      padding: 3rem;
+
+      .card-heading {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: $secondary-color;
+        font-family: $secondary-font;
+      }
+
+      .card-text {
+        font-size: 1.6rem;
+        line-height: 1.6;
+        color: $text-color;
+        margin-bottom: 3.2rem;
+      }
+
+      .price {
+        font-size: 2.4rem;
+        line-height: 1.2;
+        font-weight: 900;
+        color: $primary-color;
+        margin-bottom: 3.2rem;
+
+        del {
+          color: $text-gray;
+          text-decoration: line-through;
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+}
+
+/**************************/
+/* TESTIMONIALS SECTION */
+/**************************/
+
+.testimonials-section {
+  padding: 12.8rem 0;
+  background-color: $primary-color;
+
+  .heading-secondary {
+    color: white;
+  }
+
+  .review-img {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+  }
+
+  .review-text {
+    font-size: 2.4rem;
+
+  }
+
+  .name {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: $primary-color;
+  }
 }
