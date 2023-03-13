@@ -162,6 +162,7 @@ html {
   margin-bottom: 1.6rem;
 }
 
+.btn-form,
 .my-btn:link,
 .my-btn:visited {
   display: inline-block;
@@ -215,14 +216,18 @@ html {
 .footer-link:link,
 .footer-link:visited {
   text-decoration: none;
-  font-size: 1.6rem;
-  color: #767676;
+  font-size: 1.8rem;
+  color: #fff;
   transition: all 0.4s;
 
   &:hover,
   &:active {
-    color: $text-color;
+    color: $secondary-color;
   }
+}
+
+.footer-icon {
+  font-size: 2.4rem;
 }
 
 .lists {
@@ -299,9 +304,16 @@ strong {
 
   .nav-wrap {
     position: fixed;
-    z-index: 999;
     width: 100%;
     transition: all 0.4s;
+  }
+
+  .scroll-on {
+    z-index: 1999;
+    top: 0;
+    left: 0;
+    background-color: $white-color;
+    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.1);
   }
 
   .nav-item {
@@ -450,6 +462,8 @@ strong {
 
 .foods-section {
   padding: 12.8rem 0;
+  position: relative;
+  z-index: -1;
 
   .food-container {
     width: 65%;
@@ -520,6 +534,9 @@ strong {
 .testimonials-section {
   padding: 12.8rem 0;
   background-color: $primary-color;
+  position: relative;
+  z-index: -1;
+
 
   .heading-secondary {
     color: white;
@@ -567,8 +584,6 @@ strong {
       background: #fff;
     }
   }
-
-
 }
 
 /**************************/
@@ -577,6 +592,8 @@ strong {
 
 .faq-section {
   padding: 12.8rem 0;
+  position: relative;
+  z-index: -1;
 
   .faq-top {
     margin-top: 9.6rem;
@@ -618,5 +635,86 @@ strong {
         padding: 2rem;
       }
     }
+  }
+}
+
+/**************************/
+/* CTA SECTION */
+/**************************/
+
+.cta-section {
+  .cta-img {
+    background: url(/images/bg/bg-3.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 8rem 0;
+    width: 100%;
+  }
+
+  .heading-secondary {
+    color: #fff;
+  }
+}
+
+/**************************/
+/* NEWSLETTER SECTION */
+/**************************/
+
+.news-section {
+  padding: 12.8rem 0;
+
+  .news-form {
+    margin-top: 4.8rem;
+
+    input {
+      width: 100%;
+      height: 4.8rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #000;
+      border: 3px solid $text-gray;
+      padding: 0 2rem;
+    }
+
+    .btn-form {
+      margin-left: -3.6rem;
+    }
+  }
+}
+
+/**************************/
+/* FOOTER SECTION */
+/**************************/
+
+.footer {
+  padding: 9.6rem 0;
+  background-color: $primary-color;
+  color: $white-color;
+  text-align: center;
+
+  .links {
+    margin-bottom: 6.4rem;
+
+    .footer-lists {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 4.8rem;
+      margin-bottom: 3.6rem;
+    }
+
+    .social-lists {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 3.6rem;
+    }
+  }
+
+
+
+  .copyright {
+    font-size: 1.6rem;
+    line-height: 1.6;
   }
 }
