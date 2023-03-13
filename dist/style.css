@@ -87,6 +87,7 @@ html body {
   font-weight: 400;
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
 }
 
 /* ====================
@@ -227,6 +228,11 @@ html body {
 .lists .list-item .list-icon {
   font-size: 2rem;
   color: #AB2C48;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 strong {
@@ -575,4 +581,64 @@ strong {
 .footer .copyright {
   font-size: 1.6rem;
   line-height: 1.6;
+}
+
+/**************************/
+/* Responsive Section */
+/**************************/
+/**************************/
+/* Below 991px (Landscape Tablets) */
+/**************************/
+@media screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  .about-section .row:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .btn--order:link,
+  .btn--order:visited {
+    margin-left: 0 !important;
+    margin-top: 2.4rem;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  .btn--order:link,
+  .btn--order:visited {
+    margin-top: 0 !important;
+    margin-left: 1.6rem !important;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .story {
+    width: 100% !important;
+  }
+  .food-container {
+    width: 100% !important;
+  }
+  .review-container {
+    padding: 4.8rem 6.4rem !important;
+  }
+  .about-section .text-sec {
+    padding-left: 0 !important;
+    text-align: center;
+  }
+  .about-section .food-type {
+    text-align: center;
+  }
+  .about-section .food-type .txt {
+    padding-right: 0 !important;
+  }
+  .about-section .lists {
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */
