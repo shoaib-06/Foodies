@@ -776,6 +776,10 @@ strong {
   }
 }
 
+/**************************/
+/* Below 767px (Tablets) */
+/**************************/
+
 @media screen and (max-width: 767px) {
   html {
     font-size: 50%;
@@ -793,18 +797,10 @@ strong {
 
   .hero-top {
     padding-top: 24rem !important;
-    text-align: center;
-
-    .heading-primary {
-      font-size: 4.4rem !important;
-      padding: 0 !important;
-    }
 
     .btn-container {
       display: flex;
       flex-direction: row;
-      justify-content: center;
-      margin-top: 4.8rem;
     }
   }
 
@@ -836,6 +832,28 @@ strong {
 
     .lists {
       align-items: center;
+    }
+  }
+}
+
+/**************************/
+/* Below 565px (Mobiles) */
+/**************************/
+
+@media screen and (max-width: 565px) {
+
+  .hero-top {
+    padding-top: 24rem !important;
+    text-align: center;
+
+    .heading-primary {
+      font-size: 4.4rem !important;
+      padding: 0 !important;
+    }
+
+    .btn-container {
+      justify-content: center;
+      margin-top: 4.8rem;
     }
   }
 }
