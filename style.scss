@@ -264,43 +264,6 @@ strong {
   font-weight: 500;
 }
 
-/* MOBILE NAVIGATION */
-
-// .btn-mobile-nav {
-//   border: none;
-//   background: none;
-//   cursor: pointer;
-
-//   display: none;
-
-//   .mobile-icon-nav {
-//     height: 4.8rem;
-//     width: 4.8rem;
-//     color: #333;
-//   }
-
-//   .mobile-icon-nav[name="close-outline"] {
-//     display: none;
-//   }
-// }
-
-// .sticky .header {
-//   position: fixed;
-//   top: 0;
-//   bottom: 0;
-//   width: 100%;
-//   height: 8rem;
-//   padding-top: 0;
-//   padding-bottom: 0;
-//   background-color: rgba(255, 255, 255, 0.98);
-//   z-index: 999;
-//   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-// }
-
-// .sticky .hero-section {
-//   margin-top: 8rem !important;
-// }
-
 /**************************/
 /* HEADER SECTION */
 /**************************/
@@ -736,6 +699,27 @@ strong {
 @media screen and (max-width: 991px) {
   html {
     font-size: 56.25%;
+  }
+
+  .nav-wrap {
+    background-color: #fff;
+
+    .logo {
+      height: 6.5rem !important;
+    }
+
+    .navbar-toggler:focus {
+      box-shadow: none;
+    }
+
+    .fa-bars-staggered {
+      font-size: 2.4rem;
+      background-color: transparent;
+    }
+
+    .navbar-nav {
+      gap: 2rem;
+    }
   }
 
   .about-section {

@@ -239,7 +239,6 @@ strong {
   font-weight: 500;
 }
 
-/* MOBILE NAVIGATION */
 /**************************/
 /* HEADER SECTION */
 /**************************/
@@ -592,6 +591,22 @@ strong {
 @media screen and (max-width: 991px) {
   html {
     font-size: 56.25%;
+  }
+  .nav-wrap {
+    background-color: #fff;
+  }
+  .nav-wrap .logo {
+    height: 6.5rem !important;
+  }
+  .nav-wrap .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  .nav-wrap .fa-bars-staggered {
+    font-size: 2.4rem;
+    background-color: transparent;
+  }
+  .nav-wrap .navbar-nav {
+    gap: 2rem;
   }
   .about-section .row:nth-child(2) {
     flex-direction: column-reverse;
