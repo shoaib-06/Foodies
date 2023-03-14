@@ -2,13 +2,18 @@ console.log("Hello World!");
 
 const swiper = new Swiper('.swiper', {
   speed: 400,
-  spaceBetween: 50,
+  spaceBetween: 30,
 
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
     clickable: "true",
   },
+
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  }
 });
 
 // < !--Count -->
