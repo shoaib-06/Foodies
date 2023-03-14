@@ -658,15 +658,22 @@ strong {
     margin-top: 0 !important;
     margin-left: 1.6rem !important;
   }
-  .btn-container {
-    display: flex;
-    flex-direction: row;
-  }
   .hero-img {
     height: 90vh !important;
   }
   .hero-top {
     padding-top: 24rem !important;
+    text-align: center;
+  }
+  .hero-top .heading-primary {
+    font-size: 4.4rem !important;
+    padding: 0 !important;
+  }
+  .hero-top .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4.8rem;
   }
   .story {
     width: 100% !important;
