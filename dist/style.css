@@ -665,6 +665,9 @@ strong {
   .hero-img {
     height: 90vh !important;
   }
+  .hero-top {
+    padding-top: 24rem !important;
+  }
   .story {
     width: 100% !important;
   }
